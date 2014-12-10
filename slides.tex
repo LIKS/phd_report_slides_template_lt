@@ -1,0 +1,137 @@
+\documentclass{beamer}
+
+\usetheme{intridea}
+\usepackage[lithuanian]{babel}
+\usepackage[utf8x]{inputenc}
+\def\LTfontencoding{L7x}
+\PrerenderUnicode{ąčęėįšųūž}
+\usepackage{times}
+\usepackage[\LTfontencoding]{fontenc}
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\usepackage{verbatim}
+\usepackage{wrapfig}
+\usepackage{fancyvrb}
+\usepackage{bm}
+\usepackage{amsfonts}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{pgf}
+
+\usepackage{LTPlius}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subfig}
+\usepackage{anyfontsize}
+
+\usefonttheme{professionalfonts}
+\usefonttheme{serif}
+\setbeamerfont{note page}{family*=pplx,size=\footnotesize} % Palatino for notes
+
+\include{pythonlisting}
+
+\title{Lipšico modeliais pagrįsti daugiakriterės optimizacijos algoritmai}
+\subtitle{\color{black}Ataskaita už I-ąjį doktorantūros kursą}
+\author{\scriptsize \hspace{2em} Doktorantas: \hspace{2em} \small Albertas Gimbutas\\
+\scriptsize \hspace{8em} Vadovas: \hspace{2em} \small prof. habil. dr. Antanas Žilinskas}
+\institute[]
+{\scriptsize \hspace{8em} Doktorantūros pradžios ir pabaigos metai:\hspace{2em} \small 2013 - 2017}
+\date{\small \the\year-\the\month-\the\day}
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+\begin{frame}[fragile]{Tyrimo objektas}
+    \begin{itemize}
+        \item Lipšico modeliais pagrįsti globalios optimizacijos algoritmai
+            \medskip
+        \item Daugiakriterės optimizacijos algoritmai
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]{Tyrimo tikslas}
+    \begin{itemize}
+        \item Sukurti ir ištirti Lipšico modeliais pagrįstą daugiakriterės
+            optimizacijos metodą, kuris leistų tiksliau aproksimuoti Pareto frontą
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Planuojami rezultatai}
+    \begin{enumerate}
+        \item Pasiūlytas ir ištirtas Lipšico modeliais pagrįstas daugiakriterės optimizacijos metodas
+        \item Pasiūlytojo metodo konvergavimo greičio įvertinimas
+        \item Pasiūlytojo metodo realizacija
+        \item Eksperimentinis pasiūlytojo metodo palyginimas su kitais metodais
+    \end{enumerate}
+\end{frame}
+
+
+\begin{frame}[fragile]{2013/2014m. darbo planas}
+    \begin{enumerate}
+    \item Išlaikyti egzaminus: 
+    \begin{itemize}
+        \item \textbf{Lygiagretieji ir paskirstytieji skaičiavimai}
+            % \begin{itemize}
+            %     \item \scriptsize \textit{Lygiagretieji algoritmai ir tinklinės
+            %         technologijos}. R. Čiegis. Vilnius, Technika. 2005.
+            % \end{itemize}
+        \item \textbf{Daugiamačių duomenų vizualizavimo metodai}
+            % \begin{itemize}
+            %     \item \scriptsize \textit{Daugiamačių duomenų vizualizavimo
+            %         metodai}. G. Dzemyda, O. Kurasova, J. Žilinskas. Vilnius, Mokslo aidai. 2008.
+            % \end{itemize}
+        \item \textbf{Globaliojo optimizavimo metodai}
+            % \begin{itemize}
+            %     \item \scriptsize \textit{Global Optimization}. A. T\"{o}rn. A.
+            %         Žilinskas. New York, Springer-Verlag. 1989.
+            % \end{itemize}
+        \item \textbf{Optimizacijos teorija ir algoritmų sudėtingumas}
+            % \begin{itemize}
+            %     \item \scriptsize \textit{Iterative Methods for Optimization}.
+            %         C. T. Kelley. Philadelphia, SIAM. 1999.
+            %     \item \scriptsize \textit{Introduction to Algorithms, 3rd edition}. T.
+            %         Cormen, C. Leiserson, R. Rivest, C. Stein. London, The MIT
+            %         Press. 2009. Skyreliai: \textit{ 34. NP-Completeness, 35.
+            %         Approximation Algorithms}.
+            % \end{itemize}
+    \end{itemize}
+    % \hskip 0.4cm \footnotesize \textit{Visi egzaminai išlaikyti ir įvertinti 10.} \normalsize
+
+    \bigskip
+    \item  Apžvelgti ir išanalizuoti daugiakriterės optimizacijos algoritmus.
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame}[fragile]{\LARGE Ataskaita už 2013/2014m. mokslo metus}
+    \begin{enumerate}
+        \item Išlaikyti visi egzaminai. Visi įvertinti 10 balų.
+        \smallskip
+        \item Apžvelgti ir išanalizuoti daugiakriterės optimizacijos
+            algoritmai. \footnotesize \textit{Atlikta ruošiantis 3. Globaliojo optimizavimo metodai egzaminui.} \normalsize
+        \item Dalyvauta 2 savaičių mokymuose \textit{"Euro PhD on MCDM"}, Ispanijoje.
+        \smallskip
+        \item Pradėtas rengti straipsnio rankraštis. \\
+            \begin{itemize}
+        \footnotesize \item Pasiūlytas naujas metodas dviejų dimensijų dviejų tikslo funkcijų Lipšico
+            optimizavimo probelmoms spręsti.\normalsize
+        \end{itemize}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{2014/2015 m. darbo planas}
+    \begin{enumerate}
+        \item Apžvelgti ir išanalizuoti Lipšico modeliais pagrįstus
+            daugiakriterės optimizacijos algoritmus
+        \item Parengti disertacijos apžvalginės dalies pradinę versiją
+        \item Sudaryti ir aprašyti tyrimo metodiką
+    \end{enumerate}
+\end{frame}
+
+\end{document}
